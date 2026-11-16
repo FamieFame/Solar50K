@@ -1,0 +1,20 @@
+:root{--navy:#212176;--blue:#0044D6;--grey:#516076;--line:#D5DCE6;--bg:#F7F9FB}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:"IBM Plex Sans Thai",Tahoma,sans-serif;background:var(--bg);color:#212529;line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:48px 16px 64px}
+.head small{color:var(--blue);font-weight:600}
+.head h1{margin:4px 0 8px;color:var(--navy);font-size:clamp(26px,4vw,34px)}
+.head p{margin:0;color:var(--grey)}
+.list{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tag{background:#EEF4FF;color:var(--blue);font-weight:600;font-size:13px;border-radius:999px;padding:2px 10px}
+.ver{color:var(--grey);font-size:13px}
+.card h2{margin:10px 0 6px;color:var(--navy);font-size:20px}
+.card p{margin:0;color:var(--grey)}
+.acts{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:16px}
+.btn{display:inline-flex;align-items:center;height:44px;padding:0 22px;border-radius:999px;background:var(--blue);color:#fff;font-weight:600;text-decoration:none}
+.btn:hover{background:#0036AB}
+.link{color:var(--blue);font-weight:600}
+.foot{margin-top:32px;color:var(--grey);font-size:14px}
