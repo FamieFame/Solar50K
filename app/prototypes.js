@@ -1,5 +1,13 @@
 export const prototypes = [
   {
+    href: '/r2-e-contract',
+    file: 'r2-econtract.html',
+    tag: 'ต้นแบบรวม',
+    title: 'R2 + e-Contract',
+    version: 'R2 v137 + e-Contract v29',
+    desc: 'ต้นแบบหลัก R2 ครบทุกหน้า ต่อด้วยขั้นชำระเงินและทำสัญญาซื้อขายไฟฟ้า (e-Contract) เมื่อคำขอขายไฟถึงสถานะ 80 ทั้งกรณีประชาชนยื่นเองและ Vendor ยื่นแทน',
+  },
+  {
     href: '/r2',
     file: 'r2-main.html',
     tag: 'ต้นแบบหลัก',

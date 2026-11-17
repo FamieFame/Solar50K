@@ -5,6 +5,7 @@ const nextConfig = {
       { source: '/r2', destination: '/prototypes/r2-main.html' },
       { source: '/e-contract', destination: '/prototypes/econtract.html' },
       { source: '/vendor', destination: '/prototypes/vendor.html' },
+      { source: '/r2-e-contract', destination: '/prototypes/r2-econtract.html' },
     ];
   },
 };

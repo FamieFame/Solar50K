@@ -19,6 +19,7 @@ npm run dev
 | `/r2` | ต้นแบบหลัก R2 (v137) | `public/prototypes/r2-main.html` |
 | `/e-contract` | ต้นแบบ e-Contract (v29) | `public/prototypes/econtract.html` |
 | `/vendor` | ต้นแบบเฉพาะ Vendor (export จาก v137) | `public/prototypes/vendor.html` |
+| `/r2-e-contract` | ต้นแบบรวม R2 (v137) + e-Contract (v29) | `public/prototypes/r2-econtract.html` |
 
 ## หมายเหตุ
 
