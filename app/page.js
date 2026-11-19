@@ -18,7 +18,7 @@ export default function Home() {
             <h2>{p.title}</h2>
             <p>{p.desc}</p>
             <div className="acts">
-              <a className="btn" href={p.href}>เปิดต้นแบบ</a>
+              <a className="btn" href={p.href}>{p.open || 'เปิดต้นแบบ'}</a>
               <a className="link" href={`/prototypes/${p.file}`} download>ดาวน์โหลด HTML</a>
             </div>
           </li>
