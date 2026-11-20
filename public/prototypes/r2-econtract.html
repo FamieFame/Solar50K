@@ -1052,12 +1052,21 @@ h1,h2,h3,.brand b{color:var(--navy);font-weight:700}
   </div>
 </div>
 <div class="ov" id="m-citizen-intro" role="dialog" aria-modal="true" aria-labelledby="t-citizen-intro" aria-describedby="d-citizen-intro">
-  <div class="md">
-    <div class="mh"><h3 id="t-citizen-intro">เริ่มใช้งานสิทธิโซลาร์</h3></div>
-    <p class="d" id="d-citizen-intro">ดูวิธีเลือกผู้ให้บริการ ยื่นคำขอเชื่อมต่อ/ขายไฟคืน ชำระเงินและลงนามสัญญา และติดตามสถานะคำขอ เปิดคู่มือได้ตลอดจากเมนู “คู่มือการใช้งาน”</p>
-    <div class="mf">
-      <button class="btn sec" type="button" data-close>ไว้ดูภายหลัง</button>
-      <a class="btn" href="people-solar-public-top-nav.html" target="_blank" rel="noopener noreferrer" data-initial-focus onclick="closeM(document.getElementById('m-citizen-intro'))">เปิดคู่มือ</a>
+  <div class="md ci-md">
+    <div class="ci-hero">
+      <h3 id="t-citizen-intro">เริ่มใช้งานสิทธิโซลาร์</h3>
+      <p class="ci-sub" id="d-citizen-intro">ใช้สิทธิโซลาร์ให้ครบใน 4 ขั้นตอน</p>
+    </div>
+    <div class="ci-body">
+      <ol class="ci-steps">
+        <li><span class="ci-n">1</span>เลือกผู้ให้บริการติดตั้ง</li>
+        <li><span class="ci-n">2</span>ยื่นคำขอเชื่อมต่อ/ขายไฟคืน</li>
+        <li><span class="ci-n">3</span>ชำระเงินและลงนามสัญญา</li>
+        <li><span class="ci-n">4</span>ติดตามสถานะคำขอ</li>
+      </ol>
+      <a class="btn block ci-cta" href="people-solar-public-top-nav.html" target="_blank" rel="noopener noreferrer" data-initial-focus onclick="closeM(document.getElementById('m-citizen-intro'))">เปิดคู่มือการใช้งาน ↗</a>
+      <button class="ci-later" type="button" data-close>ไว้ดูภายหลัง</button>
+      <p class="ci-foot">เปิดคู่มือได้ทุกเมื่อจากเมนู “คู่มือการใช้งาน”</p>
     </div>
   </div>
 </div>
@@ -2390,7 +2399,24 @@ div.thaid{display:grid;justify-items:center;gap:12px;text-align:left}div.thaid s
 .quote-option input{flex:none;margin-top:3px}.quote-option span{min-width:0}
 .quote-option small{display:block;margin-top:4px;color:var(--grey)}
 @media(max-width:560px){.account-substep{padding-left:10px}.account-substep .acts .btn{height:auto;min-height:44px;max-width:100%;white-space:normal;padding:10px 16px}}
-</style><style id="journey-ux-fixes">
+</style><style id="citizen-intro-style">
+#m-citizen-intro .ci-md{padding:0;overflow:hidden;max-width:440px}
+#m-citizen-intro .ci-hero{background:linear-gradient(160deg,#E6EEFF 0%,#F4F7FF 100%);padding:26px 28px 20px;text-align:center;border-bottom:1px solid #DCE5FA}
+#m-citizen-intro .ci-ic{width:64px;height:64px;border-radius:18px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 10px 24px rgba(0,68,214,.28)}
+#m-citizen-intro .ci-tag{display:inline-block;font-size:13px;font-weight:600;color:var(--blue);background:#fff;border:1px solid #C9D8FB;border-radius:999px;padding:2px 12px;margin-bottom:10px}
+#m-citizen-intro h3{margin:0;font-size:22px;line-height:1.4;color:var(--navy)}
+#m-citizen-intro .ci-sub{margin:6px 0 0;font-size:15px;color:var(--grey)}
+#m-citizen-intro .ci-body{padding:22px 28px 24px}
+#m-citizen-intro .ci-steps{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:10px}
+#m-citizen-intro .ci-steps li{display:flex;align-items:center;gap:12px;font-size:16px;color:var(--tx)}
+#m-citizen-intro .ci-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--sel);color:var(--blue);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+#m-citizen-intro .ci-cta{display:flex;align-items:center;justify-content:center;width:100%;min-height:50px;font-size:17px;text-decoration:none;box-sizing:border-box}
+#m-citizen-intro .ci-later{display:block;margin:10px auto 0;background:none;border:0;color:var(--grey);font:inherit;font-size:15px;text-decoration:underline;text-underline-offset:3px;cursor:pointer;min-height:44px;padding:0 12px}
+#m-citizen-intro .ci-later:hover{color:var(--navy)}
+#m-citizen-intro .ci-foot{margin:4px 0 0;text-align:center;font-size:13px;color:var(--grey)}
+@media(max-width:560px){#m-citizen-intro .ci-hero{padding:24px 20px 18px}#m-citizen-intro .ci-body{padding:20px}#m-citizen-intro h3{font-size:20px}}
+</style>
+<style id="journey-ux-fixes">
 #m-auth{padding:16px;box-sizing:border-box}
 #m-auth .md{padding:0;max-height:calc(100dvh - 32px);display:flex;flex-direction:column;overflow:hidden;margin:0}
 #m-auth .mh{padding:20px 24px;margin:0;flex-shrink:0;background:#fff}
